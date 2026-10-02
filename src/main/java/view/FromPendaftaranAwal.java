@@ -5,9 +5,16 @@
  */
 package view;
 
+<<<<<<< HEAD
 import javax.swing.JOptionPane;
 import model.Kursus;
 
+=======
+/**
+ *
+ * @author USER
+ */
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
 public class FromPendaftaranAwal extends javax.swing.JFrame {
 
     /**
@@ -17,8 +24,13 @@ public class FromPendaftaranAwal extends javax.swing.JFrame {
         initComponents();
     }
 public double hitungTotal() {
+<<<<<<< HEAD
     double biaya = Double.parseDouble(txtDiskon.getText());
     int jumlah = Integer.parseInt(txtBiaya.getText());
+=======
+    double biaya = Double.parseDouble(txtBiaya.getText());
+    int jumlah = Integer.parseInt(txtJumlah.getText());
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
     return biaya * jumlah;
 }
     /**
@@ -32,6 +44,7 @@ public double hitungTotal() {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jKode = new javax.swing.JLabel();
         jNama = new javax.swing.JLabel();
         jLevel = new javax.swing.JLabel();
@@ -46,6 +59,20 @@ public double hitungTotal() {
         txtHasil = new javax.swing.JTextPane();
         cmbLevel = new javax.swing.JComboBox<>();
         jDiskon = new javax.swing.JLabel();
+=======
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        cmbKursus = new javax.swing.JComboBox<>();
+        btnProses = new javax.swing.JButton();
+        btnReset = new javax.swing.JButton();
+        txtNama = new javax.swing.JTextField();
+        txtBiaya = new javax.swing.JTextField();
+        txtJumlah = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtHasil = new javax.swing.JTextPane();
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -60,6 +87,7 @@ public double hitungTotal() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+<<<<<<< HEAD
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 102, 0));
         jLabel1.setText("Form Pendaftaran Kursus");
@@ -78,6 +106,26 @@ public double hitungTotal() {
 
         cmbKursus.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
         cmbKursus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Java", "Data Science Fundamental", "UI/UX" }));
+=======
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel1.setText("FORM PENDAFTARAN");
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel2.setText("Nama Peserta");
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel3.setText("Biaya Kursus");
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel4.setText("Jumlah");
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel5.setText("Plih Kursus");
+
+        cmbKursus.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        cmbKursus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Java", "Data Science", "UI/UX" }));
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
         cmbKursus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbKursusActionPerformed(evt);
@@ -100,6 +148,7 @@ public double hitungTotal() {
             }
         });
 
+<<<<<<< HEAD
         txtKodeKursus.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
         txtKodeKursus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +173,16 @@ public double hitungTotal() {
         jDiskon.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jDiskon.setText("Diskon (%)");
 
+=======
+        txtNama.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
+
+        txtBiaya.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
+
+        txtJumlah.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
+
+        jScrollPane1.setViewportView(txtHasil);
+
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -131,6 +190,7 @@ public double hitungTotal() {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(119, 119, 119)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -159,10 +219,36 @@ public double hitungTotal() {
                                     .addComponent(cmbLevel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addComponent(jLabel1))))
                 .addContainerGap(135, Short.MAX_VALUE))
+=======
+                        .addGap(166, 166, 166)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addGap(35, 35, 35)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnProses)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                                .addComponent(btnReset))
+                            .addComponent(cmbKursus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtNama)
+                            .addComponent(txtBiaya)
+                            .addComponent(txtJumlah)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(99, Short.MAX_VALUE))
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(16, 16, 16)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
@@ -189,12 +275,40 @@ public double hitungTotal() {
                     .addComponent(txtDiskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jDiskon))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+=======
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel4)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(txtBiaya, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(cmbKursus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(38, 38, 38)
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnProses)
                     .addComponent(btnReset))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(24, 24, 24))
+=======
+                .addContainerGap(25, Short.MAX_VALUE))
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
         );
 
         pack();
@@ -205,6 +319,7 @@ public double hitungTotal() {
     }//GEN-LAST:event_cmbKursusActionPerformed
 
     private void btnProsesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProsesActionPerformed
+<<<<<<< HEAD
         
     String kode = txtKodeKursus.getText().trim();
     String nama = cmbKursus.getSelectedItem().toString();
@@ -261,6 +376,46 @@ txtKodeKursus.setText("");
         // TODO add your handling code here:
     }//GEN-LAST:event_txtKodeKursusActionPerformed
 
+=======
+        try {
+    String nama = txtNama.getText();
+    String kursus = cmbKursus.getSelectedItem().toString();
+
+    double biaya = Double.parseDouble(txtBiaya.getText());
+    int jumlah = Integer.parseInt(txtJumlah.getText());
+
+    double total = biaya * jumlah;
+
+  txtHasil.setText(
+    "=== HASIL PENDAFTARAN KURSUS ===\n" +
+    "Nama Peserta   : " + nama + "\n" +
+    "Pilihan Kursus : " + kursus + "\n" +
+    "Biaya / Kursus : Rp " + String.format("%,.0f", biaya).replace(",", ".") + "\n" +
+    "Jumlah         : " + jumlah + "\n" +
+    "---------------------------------\n" +
+    "Total Biaya    : Rp " + String.format("%,.0f", total).replace(",", ".")
+);
+
+} catch (NumberFormatException e) {
+    javax.swing.JOptionPane.showMessageDialog(
+        this,
+        "Biaya dan jumlah harus berupa angka!",
+        "Input Tidak Valid",
+        javax.swing.JOptionPane.ERROR_MESSAGE
+    );
+}
+    }//GEN-LAST:event_btnProsesActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+txtNama.setText("");
+    txtBiaya.setText("");
+    txtJumlah.setText("");
+    cmbKursus.setSelectedIndex(0);
+    txtHasil.setText("");
+    txtNama.requestFocus();        // TODO add your handling code here:
+    }//GEN-LAST:event_btnResetActionPerformed
+
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
     /**
      * @param args the command line arguments
      */
@@ -300,6 +455,7 @@ txtKodeKursus.setText("");
     private javax.swing.JButton btnProses;
     private javax.swing.JButton btnReset;
     private javax.swing.JComboBox<String> cmbKursus;
+<<<<<<< HEAD
     private javax.swing.JComboBox<String> cmbLevel;
     private javax.swing.JLabel jBiaya;
     private javax.swing.JLabel jDiskon;
@@ -313,5 +469,18 @@ txtKodeKursus.setText("");
     private javax.swing.JTextField txtDiskon;
     private javax.swing.JTextPane txtHasil;
     private javax.swing.JTextField txtKodeKursus;
+=======
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField txtBiaya;
+    private javax.swing.JTextPane txtHasil;
+    private javax.swing.JTextField txtJumlah;
+    private javax.swing.JTextField txtNama;
+>>>>>>> 76d14249ce1b2ad2b4c89036706a7aa6f7d61df6
     // End of variables declaration//GEN-END:variables
 }
